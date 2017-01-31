@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProfilePic from './profile_pic';
 import ProfileLink from './profile_link';
 
 const Avatar = (props) => {
   return (
     <div>
-      Hello {props.name}
+      <ProfilePic imageUrl={props.imageUrl}/>
+      <ProfileLink username={props.username} />
     </div>
-  )
+  );
 };
 
 export default Avatar;

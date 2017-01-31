@@ -7,14 +7,19 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name: 'Jared'
+      name: 'Jared',
+      username: 'jaredAnders',
+      imageUrl: 'https://avatars1.githubusercontent.com/u/16006397?v=3&s=460'
     };
   }
 
   render() {
     return (
       <div>
-        <Avatar name={this.state.name} />
+        <Avatar
+          name={this.state.name}
+          username={this.state.username}
+          imageUrl={this.state.imageUrl} />
       </div>
     );
   }
