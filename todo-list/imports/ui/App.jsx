@@ -12,7 +12,7 @@ export default class App extends Component {
   }
 
   renderTasks() {
-    return this.getTasks().map((task) =? (
+    return this.getTasks().map((task) => (
       <Task key={task._id} task={task} />
     ));
   }
