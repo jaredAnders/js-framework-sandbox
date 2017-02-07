@@ -24,7 +24,7 @@ export default class App extends Component {
           <h1>Todo List</h1>
         </header>
 
-        <ul>
+        <ul className="collection">
           {this.renderTasks()}
         </ul>
       </div>
