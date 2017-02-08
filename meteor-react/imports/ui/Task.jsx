@@ -9,5 +9,5 @@ export default class Task extends Component {
 }
 
 Task.propTypes = {
-  task: PropTypes.object.isReuired,
+  task: PropTypes.object.isRequired,
 };
