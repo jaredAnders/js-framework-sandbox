@@ -25,7 +25,7 @@ export default class Task extends Component {
           id={this.props.task._id}
         />
 
-        <label htmlFor={this.props.task._id}>{this.props.task.text}</label>
+      <label htmlFor={this.props.task._id}>{this.props.task.text} <i>({this.props.task.username})</i></label>
 
         <i className="material-icons delete right" onClick={this.deleteTask.bind(this)}>remove_circle_outline</i>
       </li>
