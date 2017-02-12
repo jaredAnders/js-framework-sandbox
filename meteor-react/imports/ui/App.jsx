@@ -5,6 +5,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Tasks } from '../api/tasks.js';
 
 import Task from './Task.jsx';
+import AccountsUIWrapper from './AccountsUIWrapper.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -49,6 +50,8 @@ class App extends Component {
       <div className="container">
         <header>
           <h1>Todo List ({this.props.incompleteCount})</h1>
+
+          <AccountsUIWrapper />
 
           <input
             type="checkbox"
